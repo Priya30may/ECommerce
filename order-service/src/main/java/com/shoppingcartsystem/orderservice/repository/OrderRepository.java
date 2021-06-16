@@ -10,12 +10,12 @@ import com.shoppingcartsystem.orderservice.model.Order;
 @Repository
 public interface OrderRepository extends MongoRepository<Order,String> {
 
-	 //Order deleteBy(String _id);
+	 Order deleteBy(String _id);
 
 	List<Order> findOrderByCustomerId(int customerId);
 
 	Optional<Order> findByOrderId(int orderId);
 
-	//Order deleteOrderById(String _id);
+	Order deleteOrderById(String _id);
 	
 }

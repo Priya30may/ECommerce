@@ -39,10 +39,10 @@ public class OrderServiceImpl implements OrderService {
 		return orderRepository.save(order);
 	}
 	
-	/*
-	 * @Override public Order deleteOrderById(String _id) { return
-	 * orderRepository.deleteOrderById(_id); }
-	 */
+	
+	  @Override public Order deleteOrderById(String _id) { return
+	  orderRepository.deleteOrderById(_id); }
+	 
 	@Override
 	public List<Order> getOrderByCustomerId(int customerId) {
 		return orderRepository.findOrderByCustomerId(customerId);
